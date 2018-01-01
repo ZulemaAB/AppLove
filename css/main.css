@@ -1,9 +1,11 @@
 /*CLASES REUTILIZABLES*/
-* {
+/** {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+  /*font-family: 'Raleway', sans-serif;*/
+
+}*/
 
 *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -12,23 +14,27 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
   font-size: 16px;
   line-height: 1.71429;
+  font-family: 'Raleway', sans-serif;
 
 }
 
 img {
   vertical-align: middle;
+  width: 100%;
+  height: inherit;
 }
 
-.container {
+/*.container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 14px;
   padding-right: 14px;
-}
+}*/
 
 .container:before, .container:after {
   content: " ";
@@ -69,128 +75,145 @@ a:hover {
 .text-uppercase {
   text-transform: uppercase;
 }
-li{
+li {
   list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
- /*HEADER*/
+ /*-----HEADER-----*/
 header {
   position: fixed;
   top: 0;
   background: #fff;
   width: 100%;
-  height: 100px;
+  height: 16vh;
+  padding-top: 1em;
 }
-header nav{
-  display: inline-block;
-  margin-right: 800px;
-  /*transform: translateY(-20%);*/
 
-}
-header figure{
+.navbar {
   display: inline-block;
 }
-header .logo{
+
+.logo {
+  height: 50px;
   width: 50px;
+  float: right;
+  margin-right: 5em;
 }
-header li{
-  display: inline-block;
-  margin-right: 30px;
 
-}
-header li a {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-}
-/*fin del header/*
-/*comienzo de section*/
+/* ---Primera  seccion---*/
 .firstSection {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url(../assets/imagenes/bg-home.jpg);
+  margin-top: 100px;
+  background-image: url(../assets/images/bg-home.jpg);
   background-repeat:no-repeat;
   background-position: center;
+  background-size: cover;
   width: 100%;
-  height: 700px
+  height: 565px;
+  /*line-height: 1.5px;*/
+
 }
-.text-1{
-  padding: 120px;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
+.text-1 {
+  padding: 160px;
   text-align: center;
-  font-size: 24px;
+  color: #fff;
+  /*font-weight : bold;*/
 }
- h2{
+
+.title {
+  font-weight: bolder;
   font-size: 20px;
 }
- .text-1 a {
-   background: #15b146;
-   color:#fff;
-   font-size: 15px;
-   text-align: center;
-   padding: 5px 20px 5px 20px;
+
+.subtitle {
+  font-weight: bold;
+  font-size: 40px;
 }
-/*comienzo de secondSection*/
+
+.btn {
+  background: #15b146;
+  color:#fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+  padding: 5px 20px 5px 20px;
+}
+
+/* Segunda Sección*/
 
 .secondSection {
   text-align: center;
   width: 100%;
-  height: 700px;
-  float: left;
+  height: 600px;
   background-color: #F17C72;
   color: #fff;
-  font-size: 20px;
-  margin-top: 5px;
-  font-family: 'Raleway', sans-serif;
+  padding-top: 50px;
+
 }
-h2 {
-  font-size: 25px;
+.paragraph {
+  font-size: 15px;
   font-weight: bolder;
 }
+.title-2 {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
 
-.secondSection img {
+}
+
+.subtitle-2 {
+  padding-top:  15px;
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 1.5px;
+}
+h5 {
+  font-weight: bolder;
+  font-size: 11px;
+  line-height: 1.5px;
+}
+
+/*Imagenes  circulares*/
+.image {
+  margin-top: 50px;
+  float: left;
+  margin-left: 165px;
   height: 200px;
   width: 200px;
+
 }
 
-.secondSection .imageOne, .imageTwo, .imageThree {
-  margin-top: 20px;
-  float: left;
-  margin-right: 130px;
-}
-.secondSection .imageOne {
-  margin-left: 150px;
-}
-
-/*comienzo de thirdSection*/
-.thirdSection img {
-   width: 70%;
-}
+/*---comienzo de tercera Secciónon---*/
 
 .thirdSection {
-   padding-bottom: 15px;
-   font-family: 'Raleway', sans-serif;
-   text-align: center;
-   font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bolder;
 }
+.thirdSection img {
+ width: 70%;
 
+}
+.container {
+  padding-top: 10px;
+}
 .pictures {
-   display: inline-block;
-   height: 400px;
-   font-family: 'Raleway', sans-serif;
-   margin-top: 20px;
-   width: 400px;
+  margin: 3px;
+ display: inline-block;
+ height: 300px;
+ padding-top: 13px;
+ width:400px;
  }
- h2{
-   font-size: 24px;
-   font-weight: bolder;
- }
+
+ /*--------Footer-----*/
 .end {
-   background: #000;
-   color: #fff;
-   font-family: 'Raleway', sans-serif;
-   height: 40px;
-   text-align:center;
-   width: 1200px;
+  margin-bottom: 0px;
+ background: #000;
+ color: #fff;
+ font-family: 'Raleway', sans-serif;
+ height: 40px;
+ text-align:center;
+ width: 100%;
 }
